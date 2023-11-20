@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/it_content"
+        android:text="文本信息"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:maxLines="2"
+        android:ellipsize="end"/>
+    <!--ellipsize文本过长显示点点点-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_time"
+        android:text="时间"
+        android:textColor="#F44336"
+        android:textSize="15sp"/>
+</LinearLayout>

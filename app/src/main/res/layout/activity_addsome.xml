@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddSomethingActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bk">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backSecond"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加常用文字"
+            android:id="@+id/add_word_title"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showTime"
+        android:textColor="#FF5722"
+        android:layout_gravity="center"
+        android:text="显示时间"
+        android:textSize="15sp"
+        android:visibility="invisible"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/input_usually_word"
+        android:hint="请输入常用文字..."/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="保存"
+        android:id="@+id/second_save"
+        android:background="@drawable/addsome_savebtn_bg"
+        android:alpha="0.8"/>
+</LinearLayout>

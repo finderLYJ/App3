@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/item_func_list">
+    <ImageView
+        android:id="@+id/func_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/text"/>
+    <TextView
+        android:id="@+id/func_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="最近常用文字"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/func_iv"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"
+        android:textSize="25sp"/>
+    <ImageView
+        android:id="@+id/func_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_forward_ios_24"
+        android:layout_alignParentRight="true"
+        android:paddingRight="5dp"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

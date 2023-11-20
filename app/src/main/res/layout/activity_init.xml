@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.InitActivity"
+    android:background="@drawable/bk">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp">
+        <Button
+            android:id="@+id/go_login"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_big_login_btn"
+            android:text="@string/login"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_alignParentLeft="true"/>
+        <Button
+            android:id="@+id/go_register"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_big_register_btn"
+            android:text="@string/register"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

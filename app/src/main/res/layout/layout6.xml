@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.Fragment6">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="      首先佩戴好手语翻译手套;在佩戴好手套之后打开手机蓝牙、定位与手套进行配对;在第一次使用APP时，申请相关的使用权限，如录音权限。"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="      手语翻译功能:在连接好手套后，点击手语翻译功能，即可翻译手语，翻译结果会以文字，语音播报，视频的形式呈现;语音转义功能:点击语音转义，即可完成语音转成文字，由文字匹配手语视频进行播放;常用文字功能:点击常用文字，里边收录了最近使用频次最多的词语，也可以自行添加常用文字;学习专区功能:点击学习专区，里边收录了网络上的手语学习视频，可以供用户学习;健康监测功能:点击健康监测,在这里可以查看用户每一天的步数。"/-->
+
+    <ListView
+        android:layout_marginTop="5dp"
+        android:id="@+id/func_usual_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/add_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/add"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/add_btn_bg"/>
+</RelativeLayout>

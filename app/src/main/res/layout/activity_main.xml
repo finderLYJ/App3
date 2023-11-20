@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".activity.MainActivity">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rg"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@drawable/rb_txt"
+            android:text="首页"
+            android:drawableTop="@drawable/rb_home" />
+        <RadioButton
+            android:id="@+id/rb_func"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@drawable/rb_txt"
+            android:text="功能导航"
+            android:drawableTop="@drawable/rb_func" />
+        <RadioButton
+            android:id="@+id/rb_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@drawable/rb_txt"
+            android:text="我的"
+            android:drawableTop="@drawable/rb_my" />
+    </RadioGroup>
+    <!--中间部分使用布局进行占位，回去Fragment替换这块布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/main_layout_center"
+        android:layout_above="@+id/rg"/>
+</RelativeLayout>
